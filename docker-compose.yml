@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  gateway:
+    image: gateway
+    build:
+      context: .
+      dockerfile: Gateway/Dockerfile
+  firstService:
+    image: firstservice_image
+    build:
+      context: .
+      dockerfile: FirstService/Dockerfile
+  secondService:
+    image: secondservice_image
+    build:
+      context: .
+      dockerfile: SecondService/Dockerfile
